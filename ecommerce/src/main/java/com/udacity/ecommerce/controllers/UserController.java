@@ -22,7 +22,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/api/user")
 public class UserController {
-  private final static int PASSWORD_MINIMUM_SIZE = 7;
+  private static final int PASSWORD_MINIMUM_SIZE = 7;
   Logger log = LogManager.getLogger(UserController.class);
 
   @Autowired
